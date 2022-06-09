@@ -1,0 +1,99 @@
+.container {
+  width: 340px;
+  box-shadow: -0.6em -0.6em 1.2em #e2dcef, -0.5em 0.5em 1em #fff;
+  padding-bottom: 20px;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.container:hover{
+  transform: translateY(-10px);
+  }
+
+.container .image {
+  opacity: 0.9;
+}
+
+.container .image img {
+  width: 100%;
+  height: 200px;
+}
+
+.container .text {
+  padding: 12px 24px;
+}
+
+.container .text h4 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 4px;
+  border-radius: 12px;
+  background-color: rgb(165, 255, 204);
+  margin-bottom: 12px;
+}
+
+.container .text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.container .text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container .text a {
+  text-decoration: none;
+  color: #4ea6ff;
+  font-weight: 500;
+}
+
+.container .text a:hover {
+  text-decoration: underline;
+  color: #4ea6ff;
+  font-weight: 500;
+}
+
+.container .bottomInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container .bottomInfo .writer {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .bottomInfo .writer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.container .bottomInfo .writer p {
+  font-weight: 600;
+}
+
+.container .bottomInfo .date {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .bottomInfo .date p {
+  font-weight: 500;
+}
+
+
+@media (max-width: 760px) {
+  .container {
+    width: 380px;
+  }
+}

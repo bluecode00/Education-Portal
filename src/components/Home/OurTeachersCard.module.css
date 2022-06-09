@@ -1,0 +1,77 @@
+
+.container .card {
+  width: 330px;
+  height: 416px;
+  padding: 60px;
+  margin: 20px;
+  background: #f2f3f7;
+  box-shadow: 0.6em 0.6em 1.2em #e2dcef, -0.5em -0.5em 1em #fff;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.container .card:hover {
+ transform: scale(1.05);
+ background: #eaeaec;
+}
+
+.container .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .card .content .imgBox {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.container .card .content .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .card .content .contentBox h4 {
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.container .card .content .contentBox h5 {
+  color: #6c758f;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .card .content .social {
+  margin-top: 20px;
+}
+
+.container .card .content .social a {
+  text-decoration: none;
+  color: #6c758f;
+  font-size: 30px;
+  margin: 10px;
+  transition: color 0.4s;
+}
+.container .card .content .social a:hover {
+  color: #0196e3;
+}
+
+@media (max-width:400px){
+  .container .card .content .social {
+    margin-top: 10px;
+  }
+}

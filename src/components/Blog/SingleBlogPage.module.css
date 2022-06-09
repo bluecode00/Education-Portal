@@ -1,0 +1,133 @@
+.container {
+  width: 100%;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.container .image {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.container .image img {
+  width: 40%;
+}
+
+.container .content {
+  padding: 0 160px;
+  margin-bottom: 24px;
+}
+
+.container .content h2 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.container .content h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.container .content h5 {
+  font-size: 20px;
+  color: rgb(235, 86, 0);
+  margin-bottom: 20px;
+}
+
+.container .content .subTopic {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.container .content p {
+  line-height: 1.7;
+  letter-spacing: 0.6px;
+}
+
+.container .content p::first-letter {
+  padding-left: 6%;
+}
+
+.container .authorInfo {
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.container .authorInfo .authorImage {
+  margin-right: 24px;
+}
+
+.container .authorInfo .authorImage img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+@media (max-width: 1100px) {
+  .container .content {
+    padding: 0 100px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .container .content {
+    padding: 0 40px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  * {
+    font-size: 16px;
+  }
+  .container .content {
+    padding: 0 6px;
+    margin-bottom: 16px;
+  }
+  .container .image {
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .container .image img {
+    width: 45%;
+  }
+  .container .content h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .container .content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .container .content h5 {
+    font-size: 16px;
+    color: rgb(235, 86, 0);
+    margin-bottom: 12px;
+  }
+  .container .content .subTopic {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    letter-spacing: 0.6px;
+  }
+  .container .content p {
+    line-height: 1.2;
+    letter-spacing: 0.2px;
+  }
+  .container .authorInfo .authorImage img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}

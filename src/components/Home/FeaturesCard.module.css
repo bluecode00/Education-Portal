@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: -0.6em -0.6em 1.2em #e2dcef, -0.5em 0.5em 1em #fff;
+}
+
+.container .icon {
+  font-size: 40px;
+  color: #00bcd4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 60px;
+  border: 1px solid #00bcd4;
+}
+
+.container .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .info h4 {
+  font-size: 20px;
+  margin: 12px;
+  color: #444;
+}
+
+.container .info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container .btn {
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.container .btn a {
+  text-decoration: none;
+  display: block;
+  padding: 4px 12px;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  text-transform: uppercase;
+}
+
+.container .btn a:hover {
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+@media (max-width:600px){
+  .container .icon {
+    font-size: 30px;
+    width: 40px;
+    height: 30px;
+  }
+  
+}
+
+
+
+
+
+/*  Pop up  */
+body.activeModal {
+  overflow-y: hidden;
+}
+
+.modal, .overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 5000;
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+
+.modalContent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 44px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+  z-index: 5001;
+}
+
+.modalContent h2{
+margin-bottom: 12px;
+}
+
+.closeModel{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  font-size: 16px;
+}
+
+.closeModel:hover{
+  background-color: rgb(255, 31, 31);
+  border: 1px solid rgb(255, 61, 61);
+  color: #fff;
+}
+

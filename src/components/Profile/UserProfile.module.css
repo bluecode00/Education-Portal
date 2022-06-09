@@ -1,0 +1,32 @@
+.profile {
+  margin: 3rem auto 12rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile h1 {
+  font-size: 3rem;
+  margin-bottom: 24px;
+}
+
+.profile p {
+  font-size: 2rem;
+  margin: 40px auto;
+}
+
+.profile button {
+  width: 20%;
+  padding: 8px 2px;
+  font-size: 18px;
+  margin: 5px auto;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.profile button:hover {
+  background-color: #6dbdff;
+
+}

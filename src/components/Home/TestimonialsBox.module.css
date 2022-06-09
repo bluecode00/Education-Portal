@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: auto 20px;
+
+}
+
+.bigContainer .container .titleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bigContainer .container .titleContainer h2 {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #cf711f;
+  letter-spacing: 3px;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+.bigContainer .container .titleContainer h4 {
+  font-size: 3.4rem;
+  margin-bottom: 10x;
+}
+
+.bigContainer .container .cardsContainer {
+  padding: 10px 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bigContainer .btn {
+  margin-top: 12px;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+}
+
+.bigContainer .btn a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid #00bcd4;
+  color:#00bcd4;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.bigContainer .btn a:hover {
+  color: #fff;
+  background-color: #00bcd4;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1170px) {
+  .bigContainer .btn {
+    width: 20%;
+  }
+  .bigContainer .container .titleContainer h4 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .bigContainer .container .cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .bigContainer .container .titleContainer h4 {
+    font-size: 2rem;
+  }
+  .bigContainer .container .titleContainer h2 {
+    font-size: 1.2rem;
+  }
+
+  .bigContainer {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .bigContainer .container .titleContainer h4 {
+    font-size: 1.6rem;
+  }
+  .bigContainer .container .titleContainer h2 {
+    font-size: 1.2rem;
+  }
+  .bigContainer .btn {
+    margin-top: 2px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .bigContainer .btn a {
+    padding: 2px 8px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,239 @@
+.container {
+  width: 100%;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .contentSection {
+  text-align: center;
+  padding: 10px;
+}
+
+.container .contentSection .title {
+}
+
+.container .contentSection .title h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  margin-bottom: 18px;
+}
+
+.container .contentSection .content {
+}
+
+.container .contentSection .content h4 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.container .contentSection .content p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.container .contentSection .button {
+  margin: 24px auto;
+}
+
+.container .contentSection .button a {
+  text-decoration: none;
+  font-size: 18px;
+  border: 1px solid #00bcd4;
+  color: #00bcd4;
+  padding: 2px 8px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container .contentSection .button a:hover {
+  background-color: #00bcd4;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.container .contentSection .social {
+}
+
+.container .contentSection .social a {
+  font-size: 24px;
+  margin-right: 12px;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+}
+
+.container .contentSection .social a:hover {
+  color: #00bcd4;
+}
+
+.container .imageSection {
+  width: 100%;
+  padding: 30px;
+}
+
+.container .imageSection img {
+  width: 100%;
+}
+
+/*  Pop up  */
+/*  Pop up  */
+/*  Pop up  */
+/*  Pop up  */
+
+body.activeModal {
+  overflow-y: hidden;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 5000;
+  overflow-y: scroll;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+
+.modalContent {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 0;
+  border-radius: 3px;
+  width: 60%;
+  z-index: 5001;
+  display: flex;
+}
+
+.modalContent div {
+  padding: 40px 44px;
+}
+
+.modalContent .taksim1 {
+  width: 30%;
+  opacity: 0.9;
+}
+
+.modalContent .taksim2 {
+  display: none;
+}
+
+.modalContent div h2 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.modalContent div h5 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.modalContent div p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.closeModel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  font-size: 16px;
+}
+
+.closeModel:hover {
+  background-color: rgb(255, 31, 31);
+  border: 1px solid black;
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .modalContent .taksim2 {
+    display: block;
+  }
+
+  .modalContent .taksim1 {
+    display: none;
+  }
+
+  .modalContent {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .imageSection {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container .imageSection img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .modalContent {
+    width: 70%;
+  }
+  .container {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .modalContent {
+    top: 70%;
+    line-height: 1.1;
+    width: 90%;
+    z-index: 50010;
+  }
+
+  .container .contentSection .title h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
+
+  .container .contentSection .content h4 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+  }
+  .container .contentSection .content p {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .container .contentSection .button a {
+    font-size: 14px;
+  }
+  .container .imageSection {
+    width: 80%;
+    padding: 2px;
+  }
+}

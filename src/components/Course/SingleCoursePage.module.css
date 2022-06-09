@@ -1,0 +1,57 @@
+.container{
+  width: 100%;
+  position: relative;
+}
+
+.container .videoBack{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.container .videoBack video{
+  width: 60%;
+  margin-bottom: 24px;
+}
+
+.container .videoBack .titleInfo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.container .videoBack .titleInfo h3{
+  font-size: 36px;
+}
+
+.container .videoBack .titleInfo h6{
+  font-size: 16px;
+}
+
+.container .buttonsInfo{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  margin: 60px auto;
+
+}
+
+.container .buttonsInfo a{
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.container .buttonsInfo a:hover{
+  color: #00c3dc;
+}
+
+.container .buttonsInfo a:not(:last-child){
+
+  border-right: 1px solid #555;
+ 
+}

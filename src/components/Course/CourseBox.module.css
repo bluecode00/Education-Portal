@@ -1,0 +1,243 @@
+.courseContainer {
+  margin: 0 auto;
+  padding: 40px 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #dddddf;
+}
+
+.courseContainer .title h3 {
+  font-size: 2rem;
+}
+
+.courseContainer .title .links {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  flex-direction: row;
+  margin: 20px auto;
+  padding: 10px 100px;
+}
+
+.courseContainer .title .links button {
+  text-decoration: none;
+  color: #00bcd4;
+  border: 1px solid #00bcd4;
+  padding: 6px 12px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.courseContainer .links button:hover, 
+.courseContainer .links button:focus {
+  background-color: #00bcd4;
+  color: #fff;
+}
+
+.courseContainer .cardsContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  justify-self: center;
+  gap: 1rem;
+}
+
+.courseContainer .seeMoreCourse {
+  margin: 30px auto;
+}
+
+.courseContainer .seeMoreCourse a {
+  text-decoration: none;
+  color: #00bcd4;
+  border: 1px solid #00bcd4;
+  padding: 4px 12px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+
+.courseContainer .seeMoreCourse a:hover {
+  letter-spacing: 4px;
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+@media (max-width: 1120px) {
+  .courseContainer .title .links {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 12px;
+    column-gap: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+  .courseContainer .title .links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 835px) {
+  .courseContainer .title .links a {
+    padding: 2px 4px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 770px) {
+  .courseContainer .title .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 656px) {
+  .courseContainer .title .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .courseContainer .title .links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1270px) {
+  .courseContainer .cardsContainer {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .courseContainer .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .courseContainer .cardsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+
+
+
+
+/* Card CSS */
+/* Card CSS */
+/* Card CSS */
+/* Card CSS */
+
+.cardContainer {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.cardContainer .image {
+  overflow: hidden;
+}
+
+.cardContainer .image img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  object-fit: fill;
+  display: block;
+}
+
+.cardContainer .image img:hover {
+  transform: scale(1.3);
+}
+
+.cardContainer .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.cardContainer .content .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardContainer .content .info h6 {
+  font-size: 12px;
+  background-color: #ffca9f;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+.cardContainer .content .title {
+}
+
+.cardContainer .content .title h4 {
+  font-size: 24px;
+}
+
+.cardContainer .content .title h5 {
+  font-size: 16px;
+}
+
+.cardContainer .content a {
+  text-decoration: none;
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cardContainer .content a:hover {
+  background-color: #fff;
+  color: #0092a5;
+  box-shadow: inset 0 0 0 1px #0092a5;
+}
+
+@media (max-width: 1380px) {
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .cardContainer {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 580px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardContainer .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+

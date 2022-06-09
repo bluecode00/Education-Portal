@@ -1,0 +1,98 @@
+.cardContainer {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  box-shadow: -0.6em -0.6em 1.2em #e2dcef, -0.5em 0.5em 1em #fff;
+}
+
+.cardContainer .image {
+  overflow: hidden;
+}
+
+.cardContainer .image img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+  object-fit: fill;
+  display: block;
+}
+
+.cardContainer .image img:hover {
+  transform: scale(1.1);
+}
+
+.cardContainer .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.cardContainer .content .info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardContainer .content .info h6 {
+  font-size: 12px;
+  background-color: #ffca9f;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+.cardContainer .content .title {
+}
+
+.cardContainer .content .title h4 {
+  font-size: 24px;
+}
+
+.cardContainer .content .title h5 {
+  font-size: 16px;
+}
+
+.cardContainer .content a {
+  text-decoration: none;
+  background-color: rgb(163, 117, 255);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cardContainer .content a:hover {
+  background-color: rgb(122, 56, 255);
+}
+
+@media (max-width: 1380px) {
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .cardContainer {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media (max-width: 580px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .cardContainer .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
